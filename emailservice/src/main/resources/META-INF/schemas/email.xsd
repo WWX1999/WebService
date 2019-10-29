@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           targetNamespace="http://segmentfault.com/schemas"
+           xmlns="http://segmentfault.com/schemas">
+
+    <xs:element name="EmailRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="urls" type="xs:string"/>
+                <xs:element name="payload" type="xs:string"/>
+                <xs:element name="task" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="EmailResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="status" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
